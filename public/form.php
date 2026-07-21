@@ -11,6 +11,7 @@
     <div class="container">
         <h1>New Lead</h1>
         <form id="leadForm">
+            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrfToken); ?>">
             <div class="form-group">
                 <label for="firstName">Name</label>
                 <input type="text" id="firstName" name="firstName" required>

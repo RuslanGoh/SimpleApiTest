@@ -6,6 +6,10 @@ class MainController
 {
     public function form()
     {
+        if (empty($_SESSION['csrf_token'])) {
+            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        }
+        $csrfToken = $_SESSION['csrf_token'];
         include __DIR__ . '/../../public/form.php';
     }
 

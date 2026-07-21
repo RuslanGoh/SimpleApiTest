@@ -1,4 +1,5 @@
 <?php
+session_start();
 $config = require __DIR__ . '/config.php';
 
 $config['landingUrl'] = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . ($_SERVER['HTTP_HOST'] ?? 'localhost') . $_SERVER['REQUEST_URI'];

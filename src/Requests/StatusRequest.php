@@ -42,6 +42,10 @@ class StatusRequest extends BaseRequest
             $from = strtotime($this->dateFrom);
             $to = strtotime($this->dateTo);
             if ($from && $to) {
+                if ($from > $to) {
+                    $errors[] = 'date_from must be less than or equal to date_to';
+                }
+
                 $diff = abs($to - $from);
                 $days = floor($diff / (60 * 60 * 24));
                 if ($days > 60) {

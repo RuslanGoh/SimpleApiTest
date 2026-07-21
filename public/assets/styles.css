@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.container.list-container {
+    max-width: 850px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.filter-form {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-form .form-group {
+    margin-bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background: #f2f2f2;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.message.success {
+    background: #e9f7ef;
+    border-color: lightgreen;
+    color: lightgreen;
+}
+
+.message.error {
+    background: white;
+    border-color: lightcoral;
+    color: lightcoral;
+}
+
+a {
+    color: lightblue;
+}
+
+.text-center {
+    text-align: center;
+}
